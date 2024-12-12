@@ -20,7 +20,7 @@ This project is an encryption application that combines AES, RSA, and hashing al
 
 ```plaintext
 rsa_aes_encryption/
-├── src       # Main application code
+├── src              # Main application code
 ├── README.md        # Project documentation
 └── LICENSE          # License file
 ```
