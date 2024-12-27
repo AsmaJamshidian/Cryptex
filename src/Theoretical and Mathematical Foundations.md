@@ -67,15 +67,6 @@ This document provides a simplified explanation of the theoretical and mathemati
 
 ---
 
-### Guidelines for Adding New Algorithms
-
-When adding new algorithms to this document:
-1. Provide a clear and concise theoretical overview.
-2. Highlight the main mathematical principles.
-3. Include examples where applicable to enhance understanding.
-
----
-
 *This document aims to serve as a learning and reference guide for understanding the foundational aspects of algorithms in a straightforward manner.*
 
 
