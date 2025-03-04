@@ -25,6 +25,8 @@ rsa_aes_encryption/
 └── LICENSE          # License file
 ```
 
+to understand how it works see : https://github.com/Asma-Jamshidian2007/Cryptex/blob/main/src/Theoretical%20and%20Mathematical%20Foundations.md
+
 ## How It Works
 
 1. The user enters a password.
