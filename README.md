@@ -1,92 +1,52 @@
+# RSA-AES Encryption with Hashing
 
-# VigiEmotion - Real-Time Face Emotion Detection & Security Alert System
-
-VigiEmotion is an AI-powered application that performs real-time face detection, emotion, age, and gender analysis using your webcam. It recognizes known individuals and instantly sends alerts via Telegram with snapshots of unknown persons—bringing smart surveillance to your fingertips.
-
----
+This project is an encryption application that combines AES, RSA, and hashing algorithms to protect sensitive data and passwords. It is designed for developers who value high security in their projects.
 
 ## Features
 
-- 🎥 Real-time face detection using webcam  
-- 🧠 Emotion, age, and gender recognition powered by DeepFace  
-- 🔍 Face recognition of known individuals  
-- 🚨 Automatic Telegram alerts with snapshots of unknown faces  
-- 📊 Logs detections in CSV format with timestamps  
-- 📂 Organized folders for known and unknown face images  
+- **AES Encryption**: Fast and secure symmetric key encryption for data.
+- **RSA Encryption**: Public and private key encryption to securely protect the AES key.
+- **Secure Hashing**: Irreversible password hashing using BCrypt.
+- **Secure Memory Management**: Clears sensitive values from memory after use to prevent unauthorized access.
 
----
+## Security Design
 
-## How It Works
-
-1. Captures live video from your webcam  
-2. Detects faces and analyzes emotions, age, and gender  
-3. Compares faces against a database of known people  
-4. Saves and sends snapshots of unknown individuals via Telegram  
-5. Logs all detections with relevant details  
-
----
+1. Encrypts the user-entered password using AES.
+2. Encrypts the AES key securely using RSA.
+3. Hashes the decrypted password with BCrypt for secure storage.
+4. Clears keys and sensitive values from memory after processing.
 
 ## Project Structure
 
-```plaintext
-VigiEmotion/
-├── main.py               # Core script  
-├── requirements.txt      # Dependencies  
-├── known/                # Known faces images  
-```
+plaintext
+rsa_aes_encryption/
+├── src              # Main application code
+├── README.md        # Project documentation
+└── LICENSE          # License file
 
----
+
+to understand Theoretical and Mathematical Foundations: [See here](https://github.com/Asma-Jamshidian2007/Cryptex/blob/main/src/Theoretical%20and%20Mathematical%20Foundations.md)
+
+## How It Works
+
+1. The user enters a password.
+2. The password is encrypted using AES.
+3. The AES key is securely encrypted with RSA.
+4. The password is decrypted and hashed.
+5. Keys and sensitive values are cleared from memory.
 
 ## Prerequisites
 
-- Python 3.7 or higher  
-- Install dependencies from `requirements.txt`, including:  
-  - `deepface`  
-  - `opencv-python`  
-  - `requests`  
-
----
-
-## Setup & Usage
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/VigiEmotion.git
-cd VigiEmotion
-```
-
-2. Add clear frontal images of known people into the `known/` folder.
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the application:
-
-```bash
-python main.py
-```
-
-5. Press `q` to quit.
-
----
-
-## Security & Privacy Notes
-
-- Store sensitive credentials in `.env` and exclude it from version control.  
-- Use clear frontal images for better recognition accuracy.  
-- Telegram alerts include snapshots; consider privacy implications.  
-
----
+- **Platform**: .NET Framework or .NET Core
+- **Libraries**:
+  - System.Security.Cryptography
+  - BCrypt.Net
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-
-VigiEmotion combines AI-driven emotion recognition with real-time security alerts to provide a smart and reliable surveillance solution.
+This application is designed for developers seeking a simple yet secure solution for data encryption.
+یه همچین ردمی برای پروژه ام میخوام
