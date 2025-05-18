@@ -88,12 +88,5 @@ This project is licensed under the MIT License. See the [LICENSE](../LICENSE) fi
 
 ---
 
-## Acknowledgements
-
-- [DeepFace](https://github.com/serengil/deepface)  
-- [OpenCV](https://opencv.org/)  
-- Telegram Bot API  
-
----
 
 VigiEmotion combines AI-driven emotion recognition with real-time security alerts to provide a smart and reliable surveillance solution.
